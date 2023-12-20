@@ -7,3 +7,13 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100px; /* Personalizza la larghezza dell'immagine a tuo piacimento */
+    border-radius: 50%; /* Aggiunge un bordo rotondo all'immagine */
+}
