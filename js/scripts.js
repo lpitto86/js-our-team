@@ -1,4 +1,4 @@
-// Array di membri
+// Membri
 var membri = [
       {
           nome: "Wayne Barnett",
@@ -32,12 +32,9 @@ var membri = [
       }
 ];
 
-// Ottieni il riferimento al contenitore del team nel documento HTML
 var teamContainer = document.getElementById('team-container');
 
-// Itera attraverso l'array dei membri
 for (var i = 0; i < membri.length; i++) {
-    // Creazione di elementi HTML per ogni membro
     var divMembro = document.createElement('div');
     divMembro.className = 'team-member';
 
@@ -51,9 +48,14 @@ for (var i = 0; i < membri.length; i++) {
     var ruoloMembro = document.createElement('p');
     ruoloMembro.textContent = membri[i].ruolo;
 
-    // Aggiungi gli elementi al contenitore del team
     divMembro.appendChild(imgMembro);
     divMembro.appendChild(nomeMembro);
     divMembro.appendChild(ruoloMembro);
+
     teamContainer.appendChild(divMembro);
+
+    console.log("Nome: " + membri[i].nome);
+    console.log("Ruolo: " + membri[i].ruolo);
+    console.log("Foto: " + membri[i].foto);
+    console.log("--------------------"); // Separatore tra i membri
 }
